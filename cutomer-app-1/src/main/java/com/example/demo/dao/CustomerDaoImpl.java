@@ -27,5 +27,11 @@ public class CustomerDaoImpl implements CustomerDao {
 	{
 		return UUID.randomUUID().toString();
 	}
+	@Override
+	public Customer createCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		 customers.add(customer);
+		 return customer;
+	}
 
 }
